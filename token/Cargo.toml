@@ -1,0 +1,25 @@
+[package]
+name = "airdrop"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["lib", "cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = "22.0.7"
+stellar-fungible = { git = "https://github.com/OpenZeppelin/stellar-contracts" }
+stellar-crypto = { git = "https://github.com/OpenZeppelin/stellar-contracts" }
+stellar-merkle-distributor = { git = "https://github.com/OpenZeppelin/stellar-contracts" }
+stellar-default-impl-macro = { git = "https://github.com/OpenZeppelin/stellar-contracts" }
+
+
+[dev-dependencies]
+hex = "0.4.3"
+soroban-sdk = { version = "22.0.7", features = ["testutils"] }
+stellar-fungible = { git = "https://github.com/OpenZeppelin/stellar-contracts" }
+stellar-crypto = { git = "https://github.com/OpenZeppelin/stellar-contracts" }
+stellar-merkle-distributor = { git = "https://github.com/OpenZeppelin/stellar-contracts" }
+stellar-default-impl-macro = { git = "https://github.com/OpenZeppelin/stellar-contracts" }
