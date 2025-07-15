@@ -150,8 +150,8 @@ export default function ClaimButton() {
             {isConnected && walletProof && (
                 <div className="mb-4">
                     <span className="text-sm text-gray-600">Your allocation:</span>
-                    <div className="mt-1 text-2xl font-bold text-gray-900">
-                        {formatAmount(amount)} XLM
+                    <div className="mt-1 text-2xl font-bold text-white">
+                        {formatAmount(amount)} TOKENS
                     </div>
                 </div>
             )}

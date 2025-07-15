@@ -31,7 +31,7 @@ export default function ConnectWallet({ onWalletUpdate }: ConnectWalletProps) {
             <div className="h-3 w-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
             <span className="text-sm text-gray-600">
               Connected: 
-              <span className="ml-1 font-medium text-gray-900">
+              <span className="ml-1 font-medium text-gray-300">
                 {publicKey.slice(0, 4)}...{publicKey.slice(-4)}
               </span>
             </span>
